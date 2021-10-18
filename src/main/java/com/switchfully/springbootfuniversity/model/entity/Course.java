@@ -8,9 +8,9 @@ public class Course {
     private final String id;
     private String name;
     private int amountOfStudyPoints;
-    private int professorId;
+    private String professorId;
 
-    public Course(String name, int amountOfStudyPoints, int professorId) {
+    public Course(String name, int amountOfStudyPoints, String professorId) {
         this.id = UUID.randomUUID().toString();
         this.name = name;
         this.amountOfStudyPoints = amountOfStudyPoints;
@@ -37,11 +37,11 @@ public class Course {
         this.amountOfStudyPoints = amountOfStudyPoints;
     }
 
-    public int getProfessorId() {
+    public String getProfessorId() {
         return professorId;
     }
 
-    public void setProfessorId(int professorId) {
+    public void setProfessorId(String professorId) {
         this.professorId = professorId;
     }
 

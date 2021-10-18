@@ -4,7 +4,7 @@ public class UpdateCourseDto {
 
     private String name;
     private int amountOfStudyPoints;
-    private int professorId;
+    private String professorId;
 
     public String getName() {
         return name;
@@ -14,7 +14,7 @@ public class UpdateCourseDto {
         return amountOfStudyPoints;
     }
 
-    public int getProfessorId() {
+    public String getProfessorId() {
         return professorId;
     }
 
@@ -28,7 +28,7 @@ public class UpdateCourseDto {
         return this;
     }
 
-    public UpdateCourseDto setProfessorId(int professorId) {
+    public UpdateCourseDto setProfessorId(String professorId) {
         this.professorId = professorId;
         return this;
     }

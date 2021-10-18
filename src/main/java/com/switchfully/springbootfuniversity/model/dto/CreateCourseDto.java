@@ -4,7 +4,7 @@ public class CreateCourseDto {
 
     private String name;
     private int amountOfStudyPoints;
-    private int professorId;
+    private String professorId;
 
     public String getName() {
         return name;
@@ -14,7 +14,7 @@ public class CreateCourseDto {
         return amountOfStudyPoints;
     }
 
-    public int getProfessorId() {
+    public String getProfessorId() {
         return professorId;
     }
 
@@ -28,7 +28,7 @@ public class CreateCourseDto {
         return this;
     }
 
-    public CreateCourseDto setProfessorId(int professorId) {
+    public CreateCourseDto setProfessorId(String professorId) {
         this.professorId = professorId;
         return this;
     }
