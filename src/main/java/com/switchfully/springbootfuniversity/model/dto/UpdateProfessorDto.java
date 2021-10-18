@@ -1,6 +1,6 @@
-package com.switchfully.springbootfuniversity.service.dto;
+package com.switchfully.springbootfuniversity.model.dto;
 
-public class CreateProfessorDto {
+public class UpdateProfessorDto {
 
     private String firstName;
     private String lastName;
@@ -13,12 +13,12 @@ public class CreateProfessorDto {
         return lastName;
     }
 
-    public CreateProfessorDto setFirstName(String firstName) {
+    public UpdateProfessorDto setFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
 
-    public CreateProfessorDto setLastName(String lastName) {
+    public UpdateProfessorDto setLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }

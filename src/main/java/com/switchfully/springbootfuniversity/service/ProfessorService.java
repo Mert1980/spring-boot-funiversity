@@ -2,9 +2,9 @@ package com.switchfully.springbootfuniversity.service;
 
 import com.switchfully.springbootfuniversity.dao.ProfessorRepository;
 import com.switchfully.springbootfuniversity.model.entity.Professor;
-import com.switchfully.springbootfuniversity.service.dto.CreateProfessorDto;
-import com.switchfully.springbootfuniversity.service.dto.ProfessorDto;
-import com.switchfully.springbootfuniversity.service.dto.UpdateProfessorDto;
+import com.switchfully.springbootfuniversity.model.dto.CreateProfessorDto;
+import com.switchfully.springbootfuniversity.model.dto.ProfessorDto;
+import com.switchfully.springbootfuniversity.model.dto.UpdateProfessorDto;
 import com.switchfully.springbootfuniversity.service.mapper.ProfessorMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -10,7 +10,7 @@ public class Course {
     private int amountOfStudyPoints;
     private int professorId;
 
-    public Course(String id, String name, int amountOfStudyPoints, int professorId) {
+    public Course(String name, int amountOfStudyPoints, int professorId) {
         this.id = UUID.randomUUID().toString();
         this.name = name;
         this.amountOfStudyPoints = amountOfStudyPoints;

@@ -1,9 +1,10 @@
 package com.switchfully.springbootfuniversity.view.controller;
 
 import com.switchfully.springbootfuniversity.service.FuniversityService;
-import com.switchfully.springbootfuniversity.service.dto.CreateProfessorDto;
-import com.switchfully.springbootfuniversity.service.dto.ProfessorDto;
-import com.switchfully.springbootfuniversity.service.dto.UpdateProfessorDto;
+import com.switchfully.springbootfuniversity.model.dto.CreateProfessorDto;
+import com.switchfully.springbootfuniversity.model.dto.ProfessorDto;
+import com.switchfully.springbootfuniversity.model.dto.UpdateProfessorDto;
+import com.switchfully.springbootfuniversity.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -17,7 +18,7 @@ public class ProfessorController {
     private final FuniversityService<ProfessorDto, CreateProfessorDto, UpdateProfessorDto> professorService;
 
     @Autowired
-    public ProfessorController(FuniversityService professorService) {
+    public ProfessorController(ProfessorService professorService) {
         this.professorService = professorService;
     }
 

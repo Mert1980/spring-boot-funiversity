@@ -1,4 +1,4 @@
-package com.switchfully.springbootfuniversity.service.dto;
+package com.switchfully.springbootfuniversity.model.dto;
 
 public class ProfessorDto {
 

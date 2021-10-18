@@ -1,9 +1,9 @@
 package com.switchfully.springbootfuniversity.service.mapper;
 
 import com.switchfully.springbootfuniversity.model.entity.Professor;
-import com.switchfully.springbootfuniversity.service.dto.CreateProfessorDto;
-import com.switchfully.springbootfuniversity.service.dto.ProfessorDto;
-import com.switchfully.springbootfuniversity.service.dto.UpdateProfessorDto;
+import com.switchfully.springbootfuniversity.model.dto.CreateProfessorDto;
+import com.switchfully.springbootfuniversity.model.dto.ProfessorDto;
+import com.switchfully.springbootfuniversity.model.dto.UpdateProfessorDto;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
