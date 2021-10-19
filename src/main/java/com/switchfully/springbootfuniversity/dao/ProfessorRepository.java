@@ -1,6 +1,7 @@
 package com.switchfully.springbootfuniversity.dao;
 
 import com.switchfully.springbootfuniversity.model.entity.Professor;
+import com.switchfully.springbootfuniversity.view.exceptions.ProfessorNotFoundException;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ public class ProfessorRepository {
     public Professor getById(String id){
         var foundProfessor = professorsById.get(id);
         if(foundProfessor == null){
-            throw new IllegalArgumentException("No professor could be found with id: " + id);
+            throw new ProfessorNotFoundException("No professor could not be found with id: " + id);
         }
         return foundProfessor;
     }
