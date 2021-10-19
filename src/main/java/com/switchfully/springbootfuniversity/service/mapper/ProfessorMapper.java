@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
 public class ProfessorMapper {
 
     public ProfessorDto toDto(Professor professor) {
+        System.out.println(professor);
+        System.out.println("Professor ID: " + professor.getId());
         return new ProfessorDto()
                 .setId(professor.getId())
                 .setFirstName(professor.getFirstName())

@@ -33,6 +33,7 @@ public class ProfessorRepository {
     }
 
     public Professor save(Professor professor){
-        return professorsById.put(professor.getId(), professor);
+        professorsById.put(professor.getId(), professor);
+        return professor;
     }
 }

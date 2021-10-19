@@ -2,18 +2,16 @@ package com.switchfully.springbootfuniversity.view.controller;
 
 import com.switchfully.springbootfuniversity.model.dto.*;
 import com.switchfully.springbootfuniversity.service.CourseService;
-import com.switchfully.springbootfuniversity.service.FuniversityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
 @RequestMapping(path="courses")
 public class CourseController {
 
-    private final FuniversityService<CourseDto, CreateCourseDto, UpdateCourseDto> courseService;
+    private final CourseService courseService;
 
     @Autowired
     public CourseController(CourseService courseService) {
@@ -28,7 +26,10 @@ public class CourseController {
 
     @GetMapping(produces = "application/json")
     @ResponseStatus(HttpStatus.OK)
-    public List<CourseDto> getAllCourses() {
+    public List<CourseDto> getCoursesByStudyPoints(@RequestParam(required = false) Integer studyPoint) {
+        if(studyPoint != null){
+            return courseService.getAll(studyPoint);
+        }
         return courseService.getAll();
     }
 
@@ -43,4 +44,5 @@ public class CourseController {
     public CourseDto updateCourse(@PathVariable(value = "id") String id, @RequestBody UpdateCourseDto updateCourseDto){
         return courseService.update(id, updateCourseDto);
     }
+
 }

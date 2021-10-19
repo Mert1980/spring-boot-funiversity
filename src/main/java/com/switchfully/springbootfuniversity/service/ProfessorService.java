@@ -41,6 +41,7 @@ public class ProfessorService implements FuniversityService<ProfessorDto, Create
     @Override
     public ProfessorDto create(CreateProfessorDto createProfessorDto) {
         Professor professor = professorMapper.createToProfessor(createProfessorDto);
+        System.out.println("Prof in service: " + professor);
         return professorMapper.toDto(professorRepository.save(professor));
     }
 

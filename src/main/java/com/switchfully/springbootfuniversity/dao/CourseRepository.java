@@ -39,6 +39,8 @@ public class CourseRepository {
     }
 
     public Course save(Course course){
-        return coursesById.put(course.getId(), course);
+        coursesById.put(course.getId(), course);
+        return course;
+
     }
 }
