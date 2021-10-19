@@ -1,8 +1,15 @@
 package com.switchfully.springbootfuniversity.model.dto;
 
+import javax.validation.Valid;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+
+@Valid
 public class CreateCourseDto {
 
     private String name;
+    @Min(value = 1, message = "Study points should not be less than 1")
+    @Max(value = 6, message = "Study points should not be greater than 6")
     private int amountOfStudyPoints;
     private String professorId;
 

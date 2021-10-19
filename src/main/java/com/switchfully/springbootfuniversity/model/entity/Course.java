@@ -1,10 +1,13 @@
 package com.switchfully.springbootfuniversity.model.entity;
 
+import org.springframework.validation.annotation.Validated;
+
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import java.util.Objects;
 import java.util.UUID;
 
 public class Course {
-
     private final String id;
     private String name;
     private int amountOfStudyPoints;
