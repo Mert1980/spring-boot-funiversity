@@ -1,9 +1,5 @@
 package com.switchfully.springbootfuniversity.model.entity;
 
-import org.springframework.validation.annotation.Validated;
-
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import java.util.Objects;
 import java.util.UUID;
 
